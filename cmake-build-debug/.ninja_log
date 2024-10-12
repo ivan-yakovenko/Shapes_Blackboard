@@ -1,0 +1,24 @@
+# ninja log v6
+5	575	1728739451160797486	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.o	ae00fc372424412a
+6	572	1728738925444562959	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.o	a09d74307cbaea9c
+3	70	1728751829281264425	build.ninja	6ab4f683ccd083bc
+5	430	1728739465969709588	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o	677881db7d2ae729
+6	673	1728738695365619203	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.o	745dab76f007871a
+430	463	1728739466394509024	Shapes_Blackboard	2cd4db90b5b9c7ff
+6	487	1728738363979156528	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.o	8272460629d3c3d1
+4	426	1728734154327200277	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Line/Line.cpp.o	5544dc5f4fc19745
+6	512	1728738391036931460	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.o	4c880f190905776c
+1	55	1728751829281264425	build.ninja	6ab4f683ccd083bc
+4	577	1728751829292218820	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.o	a09d74307cbaea9c
+4	579	1728751829291942285	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o	677881db7d2ae729
+579	682	1728751829867271480	Shapes_Blackboard	227c7f7932c64c17
+5	450	1728751836608064837	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o	677881db7d2ae729
+450	483	1728751837052976567	Shapes_Blackboard	227c7f7932c64c17
+4	428	1728751842825929739	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o	677881db7d2ae729
+428	461	1728751843249380251	Shapes_Blackboard	227c7f7932c64c17
+4	409	1728751847596587748	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o	677881db7d2ae729
+409	439	1728751848001820089	Shapes_Blackboard	227c7f7932c64c17
+4	416	1728751852551355471	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o	677881db7d2ae729
+416	448	1728751852963670678	Shapes_Blackboard	227c7f7932c64c17
+4	427	1728751869902774633	CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o	677881db7d2ae729
+427	456	1728751870326165439	Shapes_Blackboard	227c7f7932c64c17
