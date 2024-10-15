@@ -16,6 +16,18 @@ void VerticalLine::printInfo() {
     std::cout << x << " " << y << " " << length << std::endl;
 }
 
+int VerticalLine::getX() const {
+    return this->x;
+}
+
+int VerticalLine::getY() const {
+    return this->y;
+}
+
+int VerticalLine::getLength() const {
+    return this->length;
+}
+
 
 
 
