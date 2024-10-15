@@ -1,11 +1,13 @@
 #pragma once
 #include "../Shape/Shape.h"
+#include "../Board/Board.h"
 
-class HorizontalLine : Shape {
+class HorizontalLine : public Shape {
 private:
     int x, y, length;
 public:
     HorizontalLine(int x, int y, int length);
-    ~HorizontalLine() = default;
+    ~HorizontalLine() override = default;
     void draw(Board &board) override;
+    void printInfo() override;
 };
