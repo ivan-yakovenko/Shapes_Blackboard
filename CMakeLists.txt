@@ -12,4 +12,13 @@ add_executable(Shapes_Blackboard Assignment_2/main.cpp
         Assignment_2/VerticalLine/VerticalLine.cpp
         Assignment_2/VerticalLine/VerticalLine.h
         Assignment_2/Rectangle/Rectangle.cpp
-        Assignment_2/Rectangle/Rectangle.h)
+        Assignment_2/Rectangle/Rectangle.h
+        Assignment_2/Circle/Circle.cpp
+        Assignment_2/Circle/Circle.h
+        Assignment_2/Triangle/Triangle.cpp
+        Assignment_2/Triangle/Triangle.h
+        Assignment_2/Triangle/Triangle.cpp
+        Assignment_2/Triangle/Triangle.h
+        Assignment_2/CLI/CLI.cpp
+        Assignment_2/CLI/CLI.h
+)
