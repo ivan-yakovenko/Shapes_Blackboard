@@ -1,5 +1,4 @@
 #pragma once
-
 #include "../Board/Board.h"
 
 class CLI {
