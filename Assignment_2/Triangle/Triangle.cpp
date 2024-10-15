@@ -23,3 +23,19 @@ void Triangle::draw(Board &board) {
 void Triangle::printInfo() {
     std::cout << x << " " << y << " " << width << " " << height << std::endl;
 }
+
+int Triangle::getX() const {
+    return this->x;
+}
+
+int Triangle::getY() const {
+    return this->y;
+}
+
+int Triangle::getWidth() const {
+    return this->width;
+}
+
+int Triangle::getHeight() const {
+    return this->height;
+}
