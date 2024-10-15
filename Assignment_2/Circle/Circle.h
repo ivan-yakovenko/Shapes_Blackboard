@@ -1,14 +1,14 @@
-//
-// Created by Ivan Yakovenko on 13.10.2024.
-//
+#pragma once
+#include "../Shape/Shape.h"
+#include "../Board/Board.h"
 
-#ifndef SHAPES_BLACKBOARD_CIRCLE_H
-#define SHAPES_BLACKBOARD_CIRCLE_H
-
-
-class Circle {
-
+class Circle : public Shape {
+private:
+    int cx, cy, radius;
+public:
+    Circle(int cx, int cy, int radius);
+    ~Circle() override = default;
+    void draw(Board &board) override;
+    void printInfo() override;
 };
 
-
-#endif //SHAPES_BLACKBOARD_CIRCLE_H
