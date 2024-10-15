@@ -33,3 +33,15 @@ void Circle::draw(Board &board) {
 void Circle::printInfo() {
     std::cout << cx << " " << cy << " " << radius << std::endl;
 }
+
+int Circle::getCX() const {
+    return this->cx;
+}
+
+int Circle::getCY() const {
+    return this->cy;
+}
+
+int Circle::getRadius() const {
+    return this->radius;
+}
