@@ -1,12 +1,6 @@
-#include "Board/Board.h"
-#include "Rectangle/Rectangle.h"
+#include "CLI/CLI.h"
 
 int main() {
-    Board board;
-
-    Rectangle rect(50, 6, 20, 4);
-    rect.draw(board);
-
-    board.draw();
-
+    CLI cli;
+    cli.run();
 }
