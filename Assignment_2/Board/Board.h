@@ -22,7 +22,7 @@ public:
     void draw();
     void setGrid(int x, int y);
     void list();
-    void showShapes();
+    static void showShapes();
     void add(std::string& shapeParameters);
     void undo();
     void clear();
