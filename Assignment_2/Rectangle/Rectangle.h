@@ -11,5 +11,9 @@ public:
     ~Rectangle() override = default;
     void draw(Board &board) override;
     void printInfo() override;
+    int getX() const;
+    int getY() const;
+    int getWidth() const;
+    int getHeight() const;
 };
 

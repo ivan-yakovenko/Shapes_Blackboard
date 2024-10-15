@@ -23,3 +23,19 @@ void Rectangle::draw(Board &board) {
 void Rectangle::printInfo() {
     std::cout << x << " " << y << " " << width << " " << height << std::endl;
 }
+
+int Rectangle::getX() const {
+    return this->x;
+}
+
+int Rectangle::getY() const {
+    return this->y;
+}
+
+int Rectangle::getWidth() const {
+    return this->width;
+}
+
+int Rectangle::getHeight() const {
+    return this->height;
+}
