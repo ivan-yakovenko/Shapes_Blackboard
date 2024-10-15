@@ -3,16 +3,19 @@
 #include "../Shape/Shape.h"
 #include "../HorizontalLine/HorizontalLine.h"
 #include "../VerticalLine/VerticalLine.h"
+#include "../Board/Board.h"
 
-class RightTriangle : Shape {
+class Triangle : public Shape {
 private:
     int x, y, width, height;
 public:
-    RightTriangle(int x, int y, int width, int height);
+    Triangle(int x, int y, int width, int height);
 
-    ~RightTriangle() = default;
+    ~Triangle() override = default;
 
     void draw(Board &board) override;
+
+    void printInfo() override;
 };
 
 
