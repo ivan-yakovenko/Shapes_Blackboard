@@ -37,22 +37,25 @@ void Board::showShapes() {
 }
 
 void Board::add(std::string &shapeParameters) {
-    std::istringstream parameters;
+    std::istringstream parameters(shapeParameters);
     std::string shape;
     int x, y, p1, p2;
     parameters >> shape >> x >> y >> p1;
+    if(x < 0 || x >= BoardWidth || y < 0 || y >= BoardHeight) {
+        return;
+    }
     if(parameters >> p2) {
         if(shape == "rectangle") {
             long id = Shape::generateID();
             std::unique_ptr<Shape> newShape = std::make_unique<Rectangle>(x, y, p1, p2);
             shapes.emplace_back(id, std::move(newShape));
-            newShape->draw(*this);
+            shapes.back().second->draw(*this);
         }
         if(shape == "triangle") {
             long id = Shape::generateID();
             std::unique_ptr<Shape> newShape = std::make_unique<Triangle>(x, y, p1, p2);
             shapes.emplace_back(id,std::move(newShape));
-            newShape->draw(*this);
+            shapes.back().second->draw(*this);
         }
     }
     else {
@@ -60,19 +63,19 @@ void Board::add(std::string &shapeParameters) {
             long id = Shape::generateID();
             std::unique_ptr<Shape> newShape = std::make_unique<HorizontalLine>(x, y, p1);
             shapes.emplace_back(id, std::move(newShape));
-            newShape->draw(*this);
+            shapes.back().second->draw(*this);
         }
         if(shape == "verticalLine") {
             long id = Shape::generateID();
             std::unique_ptr<Shape> newShape = std::make_unique<VerticalLine>(x, y, p1);
             shapes.emplace_back(id, std::move(newShape));
-            newShape->draw(*this);
+            shapes.back().second->draw(*this);
         }
         if(shape == "circle") {
             long id = Shape::generateID();
             std::unique_ptr<Shape> newShape = std::make_unique<Circle>(x, y, p1);
             shapes.emplace_back(id, std::move(newShape));
-            newShape->draw(*this);
+            shapes.back().second->draw(*this);
         }
     }
 }
@@ -96,7 +99,7 @@ void Board::save(std::string &filepath) {
     std::ofstream fout(filepath);
 
     if(!fout) {
-        throw std::runtime_error("Can't open the file for saving" + filepath);
+        throw std::runtime_error("Can't open the file for saving " + filepath);
     }
 
     fout << std::string(BoardWidth + 2, '-') << '\n';
@@ -110,12 +113,28 @@ void Board::save(std::string &filepath) {
     }
 
     fout << std::string(BoardWidth + 2, '-') << '\n';
+
+    fout.close();
 }
 
 void Board::load(std::string &filepath) {
     std::ifstream fin(filepath);
 
+    std::string line;
+    std::getline(fin, line);
+
+    for(int i = 0; i < BoardHeight; i++) {
+        std::getline(fin, line);
+        for(int j = 0; j < BoardWidth; j++) {
+            grid[i][j] = line[j+1];
+        }
+    }
+
+    std::getline(fin, line);
+
     if(!fin) {
         throw std::runtime_error("Can't open the file for loading" + filepath);
     }
+
+    fin.close();
 }

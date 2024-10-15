@@ -10,7 +10,7 @@
 #include "../Circle/Circle.h"
 #include "fstream"
 
-const int BoardWidth = 80;
+const int BoardWidth = 81;
 const int BoardHeight = 21;
 
 class Board {
