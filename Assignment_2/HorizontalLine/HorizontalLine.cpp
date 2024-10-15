@@ -15,3 +15,15 @@ void HorizontalLine::draw(Board &board) {
 void HorizontalLine::printInfo() {
     std::cout << x << " " << y << " " << length << std::endl;
 }
+
+int HorizontalLine::getX() const {
+    return this->x;
+}
+
+int HorizontalLine::getY() const {
+    return this->y;
+}
+
+int HorizontalLine::getLength() const {
+    return this->length;
+}
