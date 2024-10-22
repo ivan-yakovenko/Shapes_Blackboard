@@ -180,17 +180,10 @@ void Board::save(std::string &filepath) {
         throw std::runtime_error("Can't open the file for saving " + filepath);
     }
 
-    fout << std::string(BoardWidth + 2, '-') << '\n';
-
-    for (auto &row: grid) {
-        fout << '|';
-        for (char element: row) {
-            fout << element;
-        }
-        fout << '|' << '\n';
+    for (const auto &shape: shapes) {
+        fout << shape.first << " ";
+        shape.second->saveInfo(fout);
     }
-
-    fout << std::string(BoardWidth + 2, '-') << '\n';
 
     fout.close();
 }
@@ -198,20 +191,134 @@ void Board::save(std::string &filepath) {
 void Board::load(std::string &filepath) {
     std::ifstream fin(filepath);
 
-    std::string line;
-    std::getline(fin, line);
-
-    for (int i = 0; i < BoardHeight; i++) {
-        std::getline(fin, line);
-        for (int j = 0; j < BoardWidth; j++) {
-            grid[i][j] = line[j + 1];
-        }
+    if (!fin) {
+        throw std::runtime_error("Can't open the file for loading " + filepath);
     }
 
-    std::getline(fin, line);
-
-    if (!fin) {
-        throw std::runtime_error("Can't open the file for loading" + filepath);
+    std::string shapeParameters;
+    while (std::getline(fin, shapeParameters)) {
+        std::istringstream parameters(shapeParameters);
+        std::string shape;
+        int x, y, p1, p2;
+        long id;
+        if (parameters >> id >> shape >> x >> y >> p1) {
+            if (shape != "horizontalLine" && shape != "verticalLine" && shape != "triangle" && shape != "rectangle" &&
+                shape != "circle") {
+                std::cerr << "No such shape" << std::endl;
+                continue;
+            }
+            bool idExists = false;
+            for(const auto &existingShape: shapes) {
+                if(id == existingShape.first) {
+                    idExists = true;
+                    std::cerr << "Shape with such ID exists" << std::endl;
+                    break;
+                }
+            }
+            if(idExists) {
+                continue;
+            }
+            if (x < 0 || x >= BoardWidth || y < 0 || y >= BoardHeight) {
+                std::cerr << "Inappropriate coordinates" << std::endl;
+                continue;
+            }
+            if (parameters >> p2) {
+                if (shape == "rectangle") {
+                    for (const auto &existingShape: shapes) {
+                        if (auto *eShape = dynamic_cast<Rectangle *>(existingShape.second.get())) {
+                            if (eShape->getWidth() == p1 && eShape->getHeight() == p2 && eShape->getX() == x &&
+                                eShape->getY() == y) {
+                                std::cerr << "Such shape at such position exists" << std::endl;
+                                continue;
+                            }
+                        }
+                    }
+                    if (p1 >= BoardWidth || p2 >= BoardHeight) {
+                        std::cerr << "Inappropriate width/length" << std::endl;
+                        continue;
+                    }
+                    std::unique_ptr<Shape> newShape = std::make_unique<Rectangle>(x, y, p1, p2);
+                    shapes.emplace_back(id, std::move(newShape));
+                    shapes.back().second->draw(*this);
+                }
+                if (shape == "triangle") {
+                    if (p1 != p2 || p1 % 2 != 0 || p2 % 2 != 0) {
+                        std::cerr << "Wrong parameters" << std::endl;
+                        continue;
+                    }
+                    for (const auto &existingShape: shapes) {
+                        if (auto *eShape = dynamic_cast<Triangle *>(existingShape.second.get())) {
+                            if (eShape->getWidth() == p1 && eShape->getHeight() == p2 && eShape->getX() == x &&
+                                eShape->getY() == y) {
+                                std::cerr << "Such shape at such position exists" << std::endl;
+                                continue;
+                            }
+                        }
+                    }
+                    if (p1 >= BoardWidth || p2 >= BoardHeight) {
+                        std::cerr << "Inappropriate width/height" << std::endl;
+                        continue;
+                    }
+                    std::unique_ptr<Shape> newShape = std::make_unique<Triangle>(x, y, p1, p2);
+                    shapes.emplace_back(id, std::move(newShape));
+                    shapes.back().second->draw(*this);
+                }
+            } else {
+                if (shape == "horizontalLine") {
+                    for (const auto &existingShape: shapes) {
+                        if (auto *eShape = dynamic_cast<HorizontalLine*>(existingShape.second.get())) {
+                            if (eShape->getLength() == p1 && eShape->getX() == x && eShape->getY() == y) {
+                                std::cerr << "Such shape at such position exists" << std::endl;
+                                continue;
+                            }
+                        }
+                    }
+                    if (p1 >= BoardWidth) {
+                        std::cerr << "Inappropriate width" << std::endl;
+                        continue;
+                    }
+                    std::unique_ptr<Shape> newShape = std::make_unique<HorizontalLine>(x, y, p1);
+                    shapes.emplace_back(id, std::move(newShape));
+                    shapes.back().second->draw(*this);
+                }
+                if (shape == "verticalLine") {
+                    for (const auto &existingShape: shapes) {
+                        if (auto *eShape = dynamic_cast<VerticalLine *>(existingShape.second.get())) {
+                            if (eShape->getLength() == p1 && eShape->getX() == x && eShape->getY() == y) {
+                                std::cerr << "Such shape at such position exists" << std::endl;
+                                continue;
+                            }
+                        }
+                    }
+                    if (p1 >= BoardHeight) {
+                        std::cerr << "Inappropriate height" << std::endl;
+                        continue;
+                    }
+                    std::unique_ptr<Shape> newShape = std::make_unique<VerticalLine>(x, y, p1);
+                    shapes.emplace_back(id, std::move(newShape));
+                    shapes.back().second->draw(*this);
+                }
+                if (shape == "circle") {
+                    for (const auto &existingShape: shapes) {
+                        if (auto *eShape = dynamic_cast<Circle *>(existingShape.second.get())) {
+                            if (eShape->getRadius() == p1 && eShape->getCX() == x && eShape->getCY() == y) {
+                                std::cerr << "Such shape at such position exists" << std::endl;
+                                continue;
+                            }
+                        }
+                    }
+                    if (x + p1 >= BoardWidth && y + p1 >= BoardHeight) {
+                        std::cerr << "Inappropriate radius" << std::endl;
+                        continue;
+                    }
+                    std::unique_ptr<Shape> newShape = std::make_unique<Circle>(x, y, p1);
+                    shapes.emplace_back(id, std::move(newShape));
+                    shapes.back().second->draw(*this);
+                }
+            }
+        } else {
+            return;
+        }
     }
 
     fin.close();
