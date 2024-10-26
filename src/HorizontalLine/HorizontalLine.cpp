@@ -34,13 +34,6 @@ void HorizontalLine::printInfo() {
               << std::endl;
 }
 
-int HorizontalLine::getX() const {
-    return this->x;
-}
-
-int HorizontalLine::getY() const {
-    return this->y;
-}
 
 int HorizontalLine::getLength() const {
     return this->length;
