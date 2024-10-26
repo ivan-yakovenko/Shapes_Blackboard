@@ -1,11 +1,28 @@
 #include "VerticalLine.h"
 
-VerticalLine::VerticalLine(int x, int y, int length) : x(x), y(y), length(length) {}
+VerticalLine::VerticalLine(int x, int y, bool isFilled, std::string &color, bool colorFramed, std::string &color2,
+                           int length) : Shape(x, y, isFilled, color, colorFramed, color2),
+                                         length(length) {}
 
-void VerticalLine::draw(Board &board) {
+void VerticalLine::draw(Board &board, bool isFilled, std::string color, bool colorFramed, std::string color2) {
     if (x >= 0 && x < BoardWidth && y >= 0 && y < BoardHeight) {
-        for (int i = y; i < y + length && i < BoardHeight; i++) {
-            board.setGrid(i, x);
+        if (colorFramed && !color2.empty()) {
+            char c = color2[0];
+            c = static_cast<char>(std::toupper(c));
+            for (int i = y; i < y + length && i < BoardHeight; i++) {
+                board.setGrid(i, x, c);
+            }
+        } else if (isFilled && !color.empty()) {
+            char c = color[0];
+            c = static_cast<char>(std::toupper(c));
+            for (int i = y; i < y + length && i < BoardHeight; i++) {
+                board.setGrid(i, x, c);
+            }
+        }
+        if (color.empty() && color2.empty()) {
+            for (int i = y; i < y + length && i < BoardHeight; i++) {
+                board.setGrid(i, x, '*');
+            }
         }
     } else {
         return;
@@ -13,7 +30,9 @@ void VerticalLine::draw(Board &board) {
 }
 
 void VerticalLine::printInfo() {
-    std::cout << x << " " << y << " " << length << std::endl;
+    std::cout << "verticalLine " << x << " " << y << " " << isFilled << " " << color << " " << colorFramed << " " << color2
+              << " " << length
+              << std::endl;
 }
 
 int VerticalLine::getX() const {
@@ -29,5 +48,7 @@ int VerticalLine::getLength() const {
 }
 
 void VerticalLine::saveInfo(std::ofstream &fout) {
-    fout << "verticalLine" << " " << x << " " << y << " " << length << std::endl;
+    fout << isFilled << " " << color << " " << colorFramed << " " << color2 << "verticalLine" << " " << x << " " << y << " " <<
+         " " << length
+         << std::endl;
 }
