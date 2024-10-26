@@ -39,3 +39,7 @@ int Rectangle::getWidth() const {
 int Rectangle::getHeight() const {
     return this->height;
 }
+
+void Rectangle::saveInfo(std::ofstream &fout) {
+    fout << "rectangle" << " " << x << " " << y << " " << width << " " << height << std::endl;
+}

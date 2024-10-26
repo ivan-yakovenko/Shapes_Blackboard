@@ -39,3 +39,7 @@ int Triangle::getWidth() const {
 int Triangle::getHeight() const {
     return this->height;
 }
+
+void Triangle::saveInfo(std::ofstream &fout) {
+    fout << "triangle" << " " << x << " " << y << " " << width << " " << height << std::endl;
+}

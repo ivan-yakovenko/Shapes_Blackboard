@@ -25,7 +25,7 @@ void CLI::run() {
             board.list();
         }
         if(command == "shapes") {
-            board.showShapes();
+            Board::showShapes();
         }
         if (command == "add") {
             std::string shapeParameters;

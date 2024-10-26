@@ -28,6 +28,6 @@ int VerticalLine::getLength() const {
     return this->length;
 }
 
-
-
-
+void VerticalLine::saveInfo(std::ofstream &fout) {
+    fout << "verticalLine" << " " << x << " " << y << " " << length << std::endl;
+}

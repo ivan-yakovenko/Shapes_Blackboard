@@ -11,9 +11,10 @@ public:
     ~Rectangle() override = default;
     void draw(Board &board) override;
     void printInfo() override;
-    int getX() const;
-    int getY() const;
-    int getWidth() const;
-    int getHeight() const;
+    void saveInfo(std::ofstream &fout) override;
+    [[nodiscard]] int getX() const;
+    [[nodiscard]] int getY() const;
+    [[nodiscard]] int getWidth() const;
+    [[nodiscard]] int getHeight() const;
 };
 

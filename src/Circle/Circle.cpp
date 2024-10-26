@@ -45,3 +45,7 @@ int Circle::getCY() const {
 int Circle::getRadius() const {
     return this->radius;
 }
+
+void Circle::saveInfo(std::ofstream &fout) {
+    fout << "circle" << " " << cx << " " << cy << " " << radius << std::endl;
+}

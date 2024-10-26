@@ -27,3 +27,7 @@ int HorizontalLine::getY() const {
 int HorizontalLine::getLength() const {
     return this->length;
 }
+
+void HorizontalLine::saveInfo(std::ofstream &fout) {
+    fout << "horizontalLine" << " " << x << " " << y << " " << length << std::endl;
+}

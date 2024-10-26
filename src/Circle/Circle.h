@@ -10,8 +10,9 @@ public:
     ~Circle() override = default;
     void draw(Board &board) override;
     void printInfo() override;
-    int getCX() const;
-    int getCY() const;
-    int getRadius() const;
+    void saveInfo(std::ofstream &fout) override;
+    [[nodiscard]] int getCX() const;
+    [[nodiscard]] int getCY() const;
+    [[nodiscard]] int getRadius() const;
 };
 
