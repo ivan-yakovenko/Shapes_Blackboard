@@ -17,10 +17,12 @@ class Board {
 private:
     std::vector<std::vector<char>> grid;
     std::vector<std::pair<long, std::unique_ptr<Shape>>> shapes;
+    static void modeChecker(std::string& mode);
+    static void colorChecker(std::string& color);
 public:
     Board();
     void draw();
-    void setGrid(int x, int y);
+    void setGrid(int x, int y, char c);
     void list();
     static void showShapes();
     void add(std::string& shapeParameters);
@@ -28,4 +30,5 @@ public:
     void clear();
     void save(std::string& filepath);
     void load(std::string& filepath);
+    void select(std::string& parameter);
 };
