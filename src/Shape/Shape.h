@@ -39,4 +39,11 @@ public:
     [[nodiscard]] std::string getColor2() const {
         return this->color2;
     }
+
+    [[nodiscard]] int getX() const {
+        return this->x;
+    }
+    [[nodiscard]] int getY() const {
+        return this->y;
+    }
 };
