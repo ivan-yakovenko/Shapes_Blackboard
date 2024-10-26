@@ -2,7 +2,8 @@
 
 bool CLI::validCommand(std::string &command) {
     if (command != "draw" && command != "list" && command != "shapes" && command != "add" && command != "undo" &&
-        command != "clear" && command != "save" && command != "load") {
+        command != "clear" && command != "save" && command != "load" && command != "select" && command != "remove" &&
+        command != "edit" && command != "paint" && command != "move") {
         std::cerr << "Wrong command, try again" << std::endl;
         return false;
     }
@@ -24,7 +25,7 @@ void CLI::run() {
         if (command == "list") {
             board.list();
         }
-        if(command == "shapes") {
+        if (command == "shapes") {
             Board::showShapes();
         }
         if (command == "add") {
@@ -47,6 +48,29 @@ void CLI::run() {
             std::string filepath;
             tokens >> filepath;
             board.load(filepath);
+        }
+        if (command == "select") {
+            std::string parameter;
+            std::getline(tokens, parameter);
+            board.select(parameter);
+        }
+        if (command == "remove") {
+            board.remove();
+        }
+        if (command == "edit") {
+            std::string parameters;
+            std::getline(tokens, parameters);
+            board.edit(parameters);
+        }
+        if (command == "paint") {
+            std::string color;
+            tokens >> color;
+            board.paint(color);
+        }
+        if (command == "move") {
+            int x, y;
+            tokens >> x >> y;
+            board.move(x, y);
         }
     }
 }
