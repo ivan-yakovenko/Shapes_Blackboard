@@ -17,6 +17,7 @@ class Board {
 private:
     std::vector<std::vector<char>> grid;
     std::vector<std::pair<long, std::unique_ptr<Shape>>> shapes;
+    Shape* selectedShape = nullptr;
     static void modeChecker(std::string& mode);
     static void colorChecker(std::string& color);
 public:
@@ -31,4 +32,5 @@ public:
     void save(std::string& filepath);
     void load(std::string& filepath);
     void select(std::string& parameter);
+    void remove();
 };

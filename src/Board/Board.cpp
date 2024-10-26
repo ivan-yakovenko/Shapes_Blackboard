@@ -290,10 +290,9 @@ void Board::load(std::string &filepath) {
                 parameters >> color2;
                 colorChecker(color2);
             }
-        }
-        else {
+        } else {
             parameters >> mode2;
-            if(mode2 == "1") {
+            if (mode2 == "1") {
                 framed = true;
                 parameters >> color2;
                 colorChecker(color2);
@@ -414,4 +413,49 @@ void Board::load(std::string &filepath) {
 
     }
     fin.close();
+}
+
+void Board::select(std::string &parameter) {
+    std::istringstream parseParameters(parameter);
+    long id;
+    int x, y;
+    if (parseParameters >> id) {
+        for (const auto &shape: shapes) {
+            if (shape.first == id) {
+                selectedShape = shape.second.get();
+                shape.second->printInfo();
+                return;
+            }
+        }
+    }
+    parseParameters.clear();
+    parseParameters.str(parameter);
+    if (parseParameters >> x >> y) {
+        bool founded = false;
+        for (const auto &shape: shapes) {
+            if (shape.second->getX() == x && shape.second->getY() == y) {
+                selectedShape = shape.second.get();
+                shape.second->printInfo();
+                founded = true;
+            }
+        }
+        if (!founded) {
+            std::cerr << "No shapes at these coordinates" << std::endl;
+        }
+    }
+    else {
+        std::cerr << "Wrong id/coordinates" << std::endl;
+        return;
+    }
+}
+
+void Board::remove() {
+    for(auto shape = shapes.begin(); shape != shapes.end(); shape++) {
+        if(shape->second.get() == selectedShape) {
+            shapes.erase(shape);
+            selectedShape = nullptr;
+            return;
+        }
+    }
+    std::cerr << "No shape to delete" << std::endl;
 }
