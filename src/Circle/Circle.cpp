@@ -129,14 +129,6 @@ void Circle::printInfo() {
     std::cout << "circle " << x << " " << y << " " << isFilled << " " << color << " " << colorFramed << " " << color2 << " " << radius << std::endl;
 }
 
-int Circle::getCX() const {
-    return this->x;
-}
-
-int Circle::getCY() const {
-    return this->y;
-}
-
 int Circle::getRadius() const {
     return this->radius;
 }

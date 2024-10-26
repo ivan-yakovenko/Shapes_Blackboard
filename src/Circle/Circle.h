@@ -11,8 +11,7 @@ public:
     void draw(Board &board, bool isFilled, std::string color, bool colorFramed, std::string color2) override;
     void printInfo() override;
     void saveInfo(std::ofstream &fout) override;
-    [[nodiscard]] int getCX() const;
-    [[nodiscard]] int getCY() const;
+
     [[nodiscard]] int getRadius() const;
 };
 
