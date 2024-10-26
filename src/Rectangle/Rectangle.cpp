@@ -81,14 +81,6 @@ void Rectangle::printInfo() {
     std::cout << "rectangle " << x << " " << y << " "  << isFilled << " " << color << " " << colorFramed << " " << color2 << " " << width << " " << height << std::endl;
 }
 
-int Rectangle::getX() const {
-    return this->x;
-}
-
-int Rectangle::getY() const {
-    return this->y;
-}
-
 int Rectangle::getWidth() const {
     return this->width;
 }
