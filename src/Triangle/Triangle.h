@@ -17,9 +17,6 @@ public:
     void printInfo() override;
 
     void saveInfo(std::ofstream &fout) override;
-
-    [[nodiscard]] int getX() const;
-    [[nodiscard]] int getY() const;
     [[nodiscard]] int getWidth() const;
     [[nodiscard]] int getHeight() const;
 };

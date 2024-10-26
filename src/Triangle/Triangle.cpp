@@ -78,14 +78,6 @@ void Triangle::printInfo() {
     std::cout << "triangle " << x << " " << y << " "  << isFilled << " " << color << " " << colorFramed << " " << color2 << " " << width << " " << height << std::endl;
 }
 
-int Triangle::getX() const {
-    return this->x;
-}
-
-int Triangle::getY() const {
-    return this->y;
-}
-
 int Triangle::getWidth() const {
     return this->width;
 }
