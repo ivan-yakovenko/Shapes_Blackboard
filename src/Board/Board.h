@@ -33,4 +33,7 @@ public:
     void load(std::string& filepath);
     void select(std::string& parameter);
     void remove();
+    void edit(std::string& parameters);
+    void paint(std::string& color);
+    void move(int x, int y);
 };
