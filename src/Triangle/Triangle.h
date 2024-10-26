@@ -6,13 +6,13 @@
 
 class Triangle : public Shape {
 private:
-    int x, y, width, height;
+    int width, height;
 public:
-    Triangle(int x, int y, int width, int height);
+    Triangle(int x, int y, bool isFilled, std::string& color, bool colorFramed, std::string& color2, int width, int height);
 
     ~Triangle() override = default;
 
-    void draw(Board &board) override;
+    void draw(Board &board, bool isFilled, std::string color, bool colorFramed, std::string color2) override;
 
     void printInfo() override;
 
