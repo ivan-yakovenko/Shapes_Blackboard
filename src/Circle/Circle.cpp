@@ -1,29 +1,124 @@
 #include "Circle.h"
 
-Circle::Circle(int cx, int cy, int radius) : cx(cx), cy(cy), radius(radius) {}
+Circle::Circle(int cx, int cy, bool isFilled, std::string& color, bool colorFramed, std::string& color2, int radius) : Shape(cx, cy, isFilled, color, colorFramed, color2), radius(radius) {}
 
-void Circle::draw(Board &board) {
-    if (cx >= 0 && cx < BoardWidth && cy >= 0 && cy < BoardHeight) {
-        int x = 0;
-        int y = -radius;
-        int p = -radius;
+void Circle::draw(Board &board, bool isFilled, std::string color, bool colorFramed, std::string color2) {
+    if (x >= 0 && x < BoardWidth && y >= 0 && y < BoardHeight) {
+        if(isFilled && !color.empty() && colorFramed && !color2.empty()) {
+            char c = static_cast<char>(std::toupper(color[0]));
+            char c2 = static_cast<char>(std::toupper(color2[0]));
 
-        while (x < -y) {
-            if (p > 0) {
-                y += 1;
-                p += 2 * x + 1 + 2 * y;
-            } else {
-                p += 2 * x + 1;
+            int px = 0;
+            int py = -radius;
+            int p = -radius;
+
+            while (px < -py) {
+                if (p > 0) {
+                    py += 1;
+                    p += 2 * px + 1 + 2 * py;
+                } else {
+                    p += 2 * px + 1;
+                }
+                board.setGrid(y + py, x + px, c2);
+                board.setGrid(y + py, x - px, c2);
+                board.setGrid(y - py, x + px, c2);
+                board.setGrid(y - py, x - px, c2);
+                board.setGrid(y + px, x + py, c2);
+                board.setGrid(y - px, x + py, c2);
+                board.setGrid(y + px, x - py, c2);
+                board.setGrid(y - px, x - py, c2);
+                px += 1;
             }
-            board.setGrid(cy + y, cx + x);
-            board.setGrid(cy + y, cx - x);
-            board.setGrid(cy - y, cx + x);
-            board.setGrid(cy - y, cx - x);
-            board.setGrid(cy + x, cx + y);
-            board.setGrid(cy - x, cx + y);
-            board.setGrid(cy + x, cx - y);
-            board.setGrid(cy - x, cx - y);
-            x += 1;
+
+            for (int i = -radius; i <= radius; i++) {
+                for (int j = -radius; j <= radius; j++) {
+                    if (i * i + j * j <= radius * radius) {
+                        board.setGrid(y + i, x + j, c);
+                    }
+                }
+            }
+        }
+        if(isFilled && !color.empty()) {
+            char c = static_cast<char>(std::toupper(color[0]));
+
+            int px = 0;
+            int py = -radius;
+            int p = -radius;
+
+            while (px < -py) {
+                if (p > 0) {
+                    py += 1;
+                    p += 2 * px + 1 + 2 * py;
+                } else {
+                    p += 2 * px + 1;
+                }
+                board.setGrid(y + py, x + px, c);
+                board.setGrid(y + py, x - px, c);
+                board.setGrid(y - py, x + px, c);
+                board.setGrid(y - py, x - px, c);
+                board.setGrid(y + px, x + py, c);
+                board.setGrid(y - px, x + py, c);
+                board.setGrid(y + px, x - py, c);
+                board.setGrid(y - px, x - py, c);
+                px += 1;
+            }
+
+            for (int i = -radius; i <= radius; i++) {
+                for (int j = -radius; j <= radius; j++) {
+                    if (i * i + j * j <= radius * radius) {
+                        board.setGrid(y + i, x + j, c);
+                    }
+                }
+            }
+
+        }
+        if(colorFramed && !color2.empty()) {
+            char c = static_cast<char>(std::toupper(color2[0]));
+
+            int px = 0;
+            int py = -radius;
+            int p = -radius;
+
+            while (px < -py) {
+                if (p > 0) {
+                    py += 1;
+                    p += 2 * px + 1 + 2 * py;
+                } else {
+                    p += 2 * px + 1;
+                }
+                board.setGrid(y + py, x + px, c);
+                board.setGrid(y + py, x - px, c);
+                board.setGrid(y - py, x + px, c);
+                board.setGrid(y - py, x - px, c);
+                board.setGrid(y + px, x + py, c);
+                board.setGrid(y - px, x + py, c);
+                board.setGrid(y + px, x - py, c);
+                board.setGrid(y - px, x - py, c);
+                px += 1;
+            }
+        }
+        if(color.empty() && color2.empty()) {
+            int px = 0;
+            int py = -radius;
+            int p = -radius;
+
+            while (px < -py) {
+                if (p > 0) {
+                    py += 1;
+                    p += 2 * px + 1 + 2 * py;
+                } else {
+                    p += 2 * px + 1;
+                }
+                board.setGrid(y + py, x + px, '*');
+                board.setGrid(y + py, x - px, '*');
+                board.setGrid(y - py, x + px, '*');
+                board.setGrid(y - py, x - px, '*');
+                board.setGrid(y + px, x + py, '*');
+                board.setGrid(y - px, x + py, '*');
+                board.setGrid(y + px, x - py, '*');
+                board.setGrid(y - px, x - py, '*');
+                px += 1;
+            }
         }
     } else {
         return;
@@ -31,15 +126,15 @@ void Circle::draw(Board &board) {
 }
 
 void Circle::printInfo() {
-    std::cout << cx << " " << cy << " " << radius << std::endl;
+    std::cout << "circle " << x << " " << y << " " << isFilled << " " << color << " " << colorFramed << " " << color2 << " " << radius << std::endl;
 }
 
 int Circle::getCX() const {
-    return this->cx;
+    return this->x;
 }
 
 int Circle::getCY() const {
-    return this->cy;
+    return this->y;
 }
 
 int Circle::getRadius() const {
@@ -47,5 +142,5 @@ int Circle::getRadius() const {
 }
 
 void Circle::saveInfo(std::ofstream &fout) {
-    fout << "circle" << " " << cx << " " << cy << " " << radius << std::endl;
+    fout << isFilled << " " << color << " " << colorFramed << " " <<  color2 << " " << "circle" << " " << x << " " << y << " " << radius << std::endl;
 }
