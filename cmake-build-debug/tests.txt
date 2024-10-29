@@ -1,0 +1,5 @@
+add circle 40 10 10
+add fill red rectangle 40 10 10 10
+add fill blue frame yellow rectangle 20 6 5 5
+add frame cyan rectangle 10 10 4 4
+add frame yellow triangle 10 4 8 8

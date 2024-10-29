@@ -69,140 +69,140 @@ include CMakeFiles/Shapes_Blackboard.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Shapes_Blackboard.dir/flags.make
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/main.cpp
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/main.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
+CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/main.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/main.cpp
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/main.cpp > CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.i
+CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/main.cpp > CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.i
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/main.cpp -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.s
+CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/main.cpp -o CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.s
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Board/Board.cpp
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Board/Board.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
+CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Board/Board.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Board/Board.cpp
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Board/Board.cpp > CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.i
+CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Board/Board.cpp > CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.i
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Board/Board.cpp -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.s
+CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Board/Board.cpp -o CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.s
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/HorizontalLine/HorizontalLine.cpp
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/HorizontalLine/HorizontalLine.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
+CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/HorizontalLine/HorizontalLine.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/HorizontalLine/HorizontalLine.cpp
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/HorizontalLine/HorizontalLine.cpp > CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.i
+CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/HorizontalLine/HorizontalLine.cpp > CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.i
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/HorizontalLine/HorizontalLine.cpp -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.s
+CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/HorizontalLine/HorizontalLine.cpp -o CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.s
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/VerticalLine/VerticalLine.cpp
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/VerticalLine/VerticalLine.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
+CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/VerticalLine/VerticalLine.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/VerticalLine/VerticalLine.cpp
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/VerticalLine/VerticalLine.cpp > CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.i
+CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/VerticalLine/VerticalLine.cpp > CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.i
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/VerticalLine/VerticalLine.cpp -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.s
+CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/VerticalLine/VerticalLine.cpp -o CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.s
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Rectangle/Rectangle.cpp
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Rectangle/Rectangle.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
+CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Rectangle/Rectangle.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Rectangle/Rectangle.cpp
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Rectangle/Rectangle.cpp > CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.i
+CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Rectangle/Rectangle.cpp > CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.i
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Rectangle/Rectangle.cpp -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.s
+CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Rectangle/Rectangle.cpp -o CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.s
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Circle/Circle.cpp
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Circle/Circle.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
+CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Circle/Circle.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Circle/Circle.cpp
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Circle/Circle.cpp > CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.i
+CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Circle/Circle.cpp > CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.i
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Circle/Circle.cpp -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.s
+CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Circle/Circle.cpp -o CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.s
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Triangle/Triangle.cpp
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Triangle/Triangle.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
+CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Triangle/Triangle.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Triangle/Triangle.cpp
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Triangle/Triangle.cpp > CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.i
+CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Triangle/Triangle.cpp > CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.i
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Triangle/Triangle.cpp -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.s
+CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Triangle/Triangle.cpp -o CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.s
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/CLI.cpp
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/CLI.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.o: CMakeFiles/Shapes_Blackboard.dir/flags.make
+CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.o: /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/CLI/CLI.cpp
+CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.o: CMakeFiles/Shapes_Blackboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.o -MF CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.o.d -o CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.o -c /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/CLI/CLI.cpp
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/CLI.cpp > CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.i
+CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/CLI/CLI.cpp > CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.i
 
-CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/CLI.cpp -o CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.s
+CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/CLI/CLI.cpp -o CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.s
 
 # Object files for target Shapes_Blackboard
 Shapes_Blackboard_OBJECTS = \
-"CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o" \
-"CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.o" \
-"CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.o" \
-"CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.o" \
-"CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.o" \
-"CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.o" \
-"CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.o" \
-"CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.o"
+"CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.o" \
+"CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.o" \
+"CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.o" \
+"CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.o" \
+"CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.o" \
+"CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.o" \
+"CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.o" \
+"CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.o"
 
 # External object files for target Shapes_Blackboard
 Shapes_Blackboard_EXTERNAL_OBJECTS =
 
-Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o
-Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.o
-Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.o
-Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.o
-Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.o
-Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.o
-Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.o
-Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.o
+Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.o
+Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.o
+Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.o
+Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.o
+Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.o
+Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.o
+Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.o
+Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.o
 Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/build.make
 Shapes_Blackboard: CMakeFiles/Shapes_Blackboard.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Shapes_Blackboard"

@@ -129,197 +129,197 @@ Shapes_Blackboard/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/build
 .PHONY : Shapes_Blackboard/fast
 
-Assignment_2/Board/Board.o: Assignment_2/Board/Board.cpp.o
-.PHONY : Assignment_2/Board/Board.o
+src/Board/Board.o: src/Board/Board.cpp.o
+.PHONY : src/Board/Board.o
 
 # target to build an object file
-Assignment_2/Board/Board.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.o
-.PHONY : Assignment_2/Board/Board.cpp.o
+src/Board/Board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.o
+.PHONY : src/Board/Board.cpp.o
 
-Assignment_2/Board/Board.i: Assignment_2/Board/Board.cpp.i
-.PHONY : Assignment_2/Board/Board.i
+src/Board/Board.i: src/Board/Board.cpp.i
+.PHONY : src/Board/Board.i
 
 # target to preprocess a source file
-Assignment_2/Board/Board.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.i
-.PHONY : Assignment_2/Board/Board.cpp.i
+src/Board/Board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.i
+.PHONY : src/Board/Board.cpp.i
 
-Assignment_2/Board/Board.s: Assignment_2/Board/Board.cpp.s
-.PHONY : Assignment_2/Board/Board.s
+src/Board/Board.s: src/Board/Board.cpp.s
+.PHONY : src/Board/Board.s
 
 # target to generate assembly for a file
-Assignment_2/Board/Board.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Board/Board.cpp.s
-.PHONY : Assignment_2/Board/Board.cpp.s
+src/Board/Board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/Board/Board.cpp.s
+.PHONY : src/Board/Board.cpp.s
 
-Assignment_2/CLI/CLI.o: Assignment_2/CLI/CLI.cpp.o
-.PHONY : Assignment_2/CLI/CLI.o
+src/CLI/CLI.o: src/CLI/CLI.cpp.o
+.PHONY : src/CLI/CLI.o
 
 # target to build an object file
-Assignment_2/CLI/CLI.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.o
-.PHONY : Assignment_2/CLI/CLI.cpp.o
+src/CLI/CLI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.o
+.PHONY : src/CLI/CLI.cpp.o
 
-Assignment_2/CLI/CLI.i: Assignment_2/CLI/CLI.cpp.i
-.PHONY : Assignment_2/CLI/CLI.i
+src/CLI/CLI.i: src/CLI/CLI.cpp.i
+.PHONY : src/CLI/CLI.i
 
 # target to preprocess a source file
-Assignment_2/CLI/CLI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.i
-.PHONY : Assignment_2/CLI/CLI.cpp.i
+src/CLI/CLI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.i
+.PHONY : src/CLI/CLI.cpp.i
 
-Assignment_2/CLI/CLI.s: Assignment_2/CLI/CLI.cpp.s
-.PHONY : Assignment_2/CLI/CLI.s
+src/CLI/CLI.s: src/CLI/CLI.cpp.s
+.PHONY : src/CLI/CLI.s
 
 # target to generate assembly for a file
-Assignment_2/CLI/CLI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.s
-.PHONY : Assignment_2/CLI/CLI.cpp.s
+src/CLI/CLI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/CLI/CLI.cpp.s
+.PHONY : src/CLI/CLI.cpp.s
 
-Assignment_2/Circle/Circle.o: Assignment_2/Circle/Circle.cpp.o
-.PHONY : Assignment_2/Circle/Circle.o
+src/Circle/Circle.o: src/Circle/Circle.cpp.o
+.PHONY : src/Circle/Circle.o
 
 # target to build an object file
-Assignment_2/Circle/Circle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.o
-.PHONY : Assignment_2/Circle/Circle.cpp.o
+src/Circle/Circle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.o
+.PHONY : src/Circle/Circle.cpp.o
 
-Assignment_2/Circle/Circle.i: Assignment_2/Circle/Circle.cpp.i
-.PHONY : Assignment_2/Circle/Circle.i
+src/Circle/Circle.i: src/Circle/Circle.cpp.i
+.PHONY : src/Circle/Circle.i
 
 # target to preprocess a source file
-Assignment_2/Circle/Circle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.i
-.PHONY : Assignment_2/Circle/Circle.cpp.i
+src/Circle/Circle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.i
+.PHONY : src/Circle/Circle.cpp.i
 
-Assignment_2/Circle/Circle.s: Assignment_2/Circle/Circle.cpp.s
-.PHONY : Assignment_2/Circle/Circle.s
+src/Circle/Circle.s: src/Circle/Circle.cpp.s
+.PHONY : src/Circle/Circle.s
 
 # target to generate assembly for a file
-Assignment_2/Circle/Circle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Circle/Circle.cpp.s
-.PHONY : Assignment_2/Circle/Circle.cpp.s
+src/Circle/Circle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/Circle/Circle.cpp.s
+.PHONY : src/Circle/Circle.cpp.s
 
-Assignment_2/HorizontalLine/HorizontalLine.o: Assignment_2/HorizontalLine/HorizontalLine.cpp.o
-.PHONY : Assignment_2/HorizontalLine/HorizontalLine.o
+src/HorizontalLine/HorizontalLine.o: src/HorizontalLine/HorizontalLine.cpp.o
+.PHONY : src/HorizontalLine/HorizontalLine.o
 
 # target to build an object file
-Assignment_2/HorizontalLine/HorizontalLine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.o
-.PHONY : Assignment_2/HorizontalLine/HorizontalLine.cpp.o
+src/HorizontalLine/HorizontalLine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.o
+.PHONY : src/HorizontalLine/HorizontalLine.cpp.o
 
-Assignment_2/HorizontalLine/HorizontalLine.i: Assignment_2/HorizontalLine/HorizontalLine.cpp.i
-.PHONY : Assignment_2/HorizontalLine/HorizontalLine.i
+src/HorizontalLine/HorizontalLine.i: src/HorizontalLine/HorizontalLine.cpp.i
+.PHONY : src/HorizontalLine/HorizontalLine.i
 
 # target to preprocess a source file
-Assignment_2/HorizontalLine/HorizontalLine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.i
-.PHONY : Assignment_2/HorizontalLine/HorizontalLine.cpp.i
+src/HorizontalLine/HorizontalLine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.i
+.PHONY : src/HorizontalLine/HorizontalLine.cpp.i
 
-Assignment_2/HorizontalLine/HorizontalLine.s: Assignment_2/HorizontalLine/HorizontalLine.cpp.s
-.PHONY : Assignment_2/HorizontalLine/HorizontalLine.s
+src/HorizontalLine/HorizontalLine.s: src/HorizontalLine/HorizontalLine.cpp.s
+.PHONY : src/HorizontalLine/HorizontalLine.s
 
 # target to generate assembly for a file
-Assignment_2/HorizontalLine/HorizontalLine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/HorizontalLine/HorizontalLine.cpp.s
-.PHONY : Assignment_2/HorizontalLine/HorizontalLine.cpp.s
+src/HorizontalLine/HorizontalLine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/HorizontalLine/HorizontalLine.cpp.s
+.PHONY : src/HorizontalLine/HorizontalLine.cpp.s
 
-Assignment_2/Rectangle/Rectangle.o: Assignment_2/Rectangle/Rectangle.cpp.o
-.PHONY : Assignment_2/Rectangle/Rectangle.o
+src/Rectangle/Rectangle.o: src/Rectangle/Rectangle.cpp.o
+.PHONY : src/Rectangle/Rectangle.o
 
 # target to build an object file
-Assignment_2/Rectangle/Rectangle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.o
-.PHONY : Assignment_2/Rectangle/Rectangle.cpp.o
+src/Rectangle/Rectangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.o
+.PHONY : src/Rectangle/Rectangle.cpp.o
 
-Assignment_2/Rectangle/Rectangle.i: Assignment_2/Rectangle/Rectangle.cpp.i
-.PHONY : Assignment_2/Rectangle/Rectangle.i
+src/Rectangle/Rectangle.i: src/Rectangle/Rectangle.cpp.i
+.PHONY : src/Rectangle/Rectangle.i
 
 # target to preprocess a source file
-Assignment_2/Rectangle/Rectangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.i
-.PHONY : Assignment_2/Rectangle/Rectangle.cpp.i
+src/Rectangle/Rectangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.i
+.PHONY : src/Rectangle/Rectangle.cpp.i
 
-Assignment_2/Rectangle/Rectangle.s: Assignment_2/Rectangle/Rectangle.cpp.s
-.PHONY : Assignment_2/Rectangle/Rectangle.s
+src/Rectangle/Rectangle.s: src/Rectangle/Rectangle.cpp.s
+.PHONY : src/Rectangle/Rectangle.s
 
 # target to generate assembly for a file
-Assignment_2/Rectangle/Rectangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Rectangle/Rectangle.cpp.s
-.PHONY : Assignment_2/Rectangle/Rectangle.cpp.s
+src/Rectangle/Rectangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/Rectangle/Rectangle.cpp.s
+.PHONY : src/Rectangle/Rectangle.cpp.s
 
-Assignment_2/Triangle/Triangle.o: Assignment_2/Triangle/Triangle.cpp.o
-.PHONY : Assignment_2/Triangle/Triangle.o
+src/Triangle/Triangle.o: src/Triangle/Triangle.cpp.o
+.PHONY : src/Triangle/Triangle.o
 
 # target to build an object file
-Assignment_2/Triangle/Triangle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.o
-.PHONY : Assignment_2/Triangle/Triangle.cpp.o
+src/Triangle/Triangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.o
+.PHONY : src/Triangle/Triangle.cpp.o
 
-Assignment_2/Triangle/Triangle.i: Assignment_2/Triangle/Triangle.cpp.i
-.PHONY : Assignment_2/Triangle/Triangle.i
+src/Triangle/Triangle.i: src/Triangle/Triangle.cpp.i
+.PHONY : src/Triangle/Triangle.i
 
 # target to preprocess a source file
-Assignment_2/Triangle/Triangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.i
-.PHONY : Assignment_2/Triangle/Triangle.cpp.i
+src/Triangle/Triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.i
+.PHONY : src/Triangle/Triangle.cpp.i
 
-Assignment_2/Triangle/Triangle.s: Assignment_2/Triangle/Triangle.cpp.s
-.PHONY : Assignment_2/Triangle/Triangle.s
+src/Triangle/Triangle.s: src/Triangle/Triangle.cpp.s
+.PHONY : src/Triangle/Triangle.s
 
 # target to generate assembly for a file
-Assignment_2/Triangle/Triangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/Triangle/Triangle.cpp.s
-.PHONY : Assignment_2/Triangle/Triangle.cpp.s
+src/Triangle/Triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/Triangle/Triangle.cpp.s
+.PHONY : src/Triangle/Triangle.cpp.s
 
-Assignment_2/VerticalLine/VerticalLine.o: Assignment_2/VerticalLine/VerticalLine.cpp.o
-.PHONY : Assignment_2/VerticalLine/VerticalLine.o
+src/VerticalLine/VerticalLine.o: src/VerticalLine/VerticalLine.cpp.o
+.PHONY : src/VerticalLine/VerticalLine.o
 
 # target to build an object file
-Assignment_2/VerticalLine/VerticalLine.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.o
-.PHONY : Assignment_2/VerticalLine/VerticalLine.cpp.o
+src/VerticalLine/VerticalLine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.o
+.PHONY : src/VerticalLine/VerticalLine.cpp.o
 
-Assignment_2/VerticalLine/VerticalLine.i: Assignment_2/VerticalLine/VerticalLine.cpp.i
-.PHONY : Assignment_2/VerticalLine/VerticalLine.i
+src/VerticalLine/VerticalLine.i: src/VerticalLine/VerticalLine.cpp.i
+.PHONY : src/VerticalLine/VerticalLine.i
 
 # target to preprocess a source file
-Assignment_2/VerticalLine/VerticalLine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.i
-.PHONY : Assignment_2/VerticalLine/VerticalLine.cpp.i
+src/VerticalLine/VerticalLine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.i
+.PHONY : src/VerticalLine/VerticalLine.cpp.i
 
-Assignment_2/VerticalLine/VerticalLine.s: Assignment_2/VerticalLine/VerticalLine.cpp.s
-.PHONY : Assignment_2/VerticalLine/VerticalLine.s
+src/VerticalLine/VerticalLine.s: src/VerticalLine/VerticalLine.cpp.s
+.PHONY : src/VerticalLine/VerticalLine.s
 
 # target to generate assembly for a file
-Assignment_2/VerticalLine/VerticalLine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/VerticalLine/VerticalLine.cpp.s
-.PHONY : Assignment_2/VerticalLine/VerticalLine.cpp.s
+src/VerticalLine/VerticalLine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/VerticalLine/VerticalLine.cpp.s
+.PHONY : src/VerticalLine/VerticalLine.cpp.s
 
-Assignment_2/main.o: Assignment_2/main.cpp.o
-.PHONY : Assignment_2/main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-Assignment_2/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.o
-.PHONY : Assignment_2/main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-Assignment_2/main.i: Assignment_2/main.cpp.i
-.PHONY : Assignment_2/main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-Assignment_2/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.i
-.PHONY : Assignment_2/main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-Assignment_2/main.s: Assignment_2/main.cpp.s
-.PHONY : Assignment_2/main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-Assignment_2/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/Assignment_2/main.cpp.s
-.PHONY : Assignment_2/main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shapes_Blackboard.dir/build.make CMakeFiles/Shapes_Blackboard.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -330,30 +330,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Shapes_Blackboard"
-	@echo "... Assignment_2/Board/Board.o"
-	@echo "... Assignment_2/Board/Board.i"
-	@echo "... Assignment_2/Board/Board.s"
-	@echo "... Assignment_2/CLI/CLI.o"
-	@echo "... Assignment_2/CLI/CLI.i"
-	@echo "... Assignment_2/CLI/CLI.s"
-	@echo "... Assignment_2/Circle/Circle.o"
-	@echo "... Assignment_2/Circle/Circle.i"
-	@echo "... Assignment_2/Circle/Circle.s"
-	@echo "... Assignment_2/HorizontalLine/HorizontalLine.o"
-	@echo "... Assignment_2/HorizontalLine/HorizontalLine.i"
-	@echo "... Assignment_2/HorizontalLine/HorizontalLine.s"
-	@echo "... Assignment_2/Rectangle/Rectangle.o"
-	@echo "... Assignment_2/Rectangle/Rectangle.i"
-	@echo "... Assignment_2/Rectangle/Rectangle.s"
-	@echo "... Assignment_2/Triangle/Triangle.o"
-	@echo "... Assignment_2/Triangle/Triangle.i"
-	@echo "... Assignment_2/Triangle/Triangle.s"
-	@echo "... Assignment_2/VerticalLine/VerticalLine.o"
-	@echo "... Assignment_2/VerticalLine/VerticalLine.i"
-	@echo "... Assignment_2/VerticalLine/VerticalLine.s"
-	@echo "... Assignment_2/main.o"
-	@echo "... Assignment_2/main.i"
-	@echo "... Assignment_2/main.s"
+	@echo "... src/Board/Board.o"
+	@echo "... src/Board/Board.i"
+	@echo "... src/Board/Board.s"
+	@echo "... src/CLI/CLI.o"
+	@echo "... src/CLI/CLI.i"
+	@echo "... src/CLI/CLI.s"
+	@echo "... src/Circle/Circle.o"
+	@echo "... src/Circle/Circle.i"
+	@echo "... src/Circle/Circle.s"
+	@echo "... src/HorizontalLine/HorizontalLine.o"
+	@echo "... src/HorizontalLine/HorizontalLine.i"
+	@echo "... src/HorizontalLine/HorizontalLine.s"
+	@echo "... src/Rectangle/Rectangle.o"
+	@echo "... src/Rectangle/Rectangle.i"
+	@echo "... src/Rectangle/Rectangle.s"
+	@echo "... src/Triangle/Triangle.o"
+	@echo "... src/Triangle/Triangle.i"
+	@echo "... src/Triangle/Triangle.s"
+	@echo "... src/VerticalLine/VerticalLine.o"
+	@echo "... src/VerticalLine/VerticalLine.i"
+	@echo "... src/VerticalLine/VerticalLine.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

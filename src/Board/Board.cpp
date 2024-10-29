@@ -214,7 +214,7 @@ void Board::add(std::string &shapeParameters) {
         if (shape == "circle") {
             for (const auto &existingShape: shapes) {
                 if (auto *eShape = dynamic_cast<Circle *>(existingShape.second.get())) {
-                    if (eShape->getRadius() == p1 && eShape->getCX() == x && eShape->getCY() == y) {
+                    if (eShape->getRadius() == p1 && eShape->getX() == x && eShape->getY() == y) {
                         std::cerr << "Such shape at such position exists" << std::endl;
                         return;
                     }
@@ -395,7 +395,7 @@ void Board::load(std::string &filepath) {
             if (shape == "circle") {
                 for (const auto &existingShape: shapes) {
                     if (auto *eShape = dynamic_cast<Circle *>(existingShape.second.get())) {
-                        if (eShape->getRadius() == p1 && eShape->getCX() == x && eShape->getCY() == y) {
+                        if (eShape->getRadius() == p1 && eShape->getX() == x && eShape->getY() == y) {
                             std::cerr << "Such shape at such position exists" << std::endl;
                             return;
                         }
@@ -432,11 +432,12 @@ void Board::select(std::string &parameter) {
     parseParameters.str(parameter);
     if (parseParameters >> x >> y) {
         bool founded = false;
-        for (const auto &shape: shapes) {
-            if (shape.second->getX() == x && shape.second->getY() == y) {
-                selectedShape = shape.second.get();
-                shape.second->printInfo();
+        for (auto shape = shapes.rbegin(); shape != shapes.rend(); shape++) {
+            if (shape->second->getX() == x && shape->second->getY() == y) {
+                selectedShape = shape->second.get();
+                shape->second->printInfo();
                 founded = true;
+                break;
             }
         }
         if (!founded) {
@@ -460,8 +461,9 @@ void Board::remove() {
             selectedShape = nullptr;
             grid.assign(BoardHeight, std::vector<char>(BoardWidth, ' '));
             for (const auto &eShape: shapes) {
-                eShape.second->draw(*this, eShape.second->getIsFilled(), eShape.second->getColor(), eShape.second->getColorFramed(),
-                                   eShape.second->getColor2());
+                eShape.second->draw(*this, eShape.second->getIsFilled(), eShape.second->getColor(),
+                                    eShape.second->getColorFramed(),
+                                    eShape.second->getColor2());
             }
             return;
         }
@@ -469,6 +471,7 @@ void Board::remove() {
 }
 
 void Board::edit(std::string &parameters) {
+
     std::istringstream parseParameters(parameters);
     int p1, p2;
 
@@ -486,65 +489,135 @@ void Board::edit(std::string &parameters) {
             bool framed = shape->second->getColorFramed();
             std::string color = shape->second->getColor();
             std::string color2 = shape->second->getColor2();
-            if(dynamic_cast<Rectangle*>(shape->second.get())) {
-                parseParameters >> p1 >> p2;
 
-                remove();
 
-                std::unique_ptr<Shape> newShape = std::make_unique<Rectangle>(x, y, filled, color, framed, color2, p1,
-                                                                             p2);
-                shapes.emplace_back(id, std::move(newShape));
-                shapes.back().second->draw(*this, filled, color, framed, color2);
-                break;
+
+            if (dynamic_cast<Rectangle *>(shape->second.get())) {
+
+                if(parseParameters >> p1 >> p2) {
+                    if(p1 < BoardWidth || p2 < BoardHeight) {
+                        remove();
+                        std::unique_ptr<Shape> newShape = std::make_unique<Rectangle>(x, y, filled, color, framed, color2, p1,
+                                                                                      p2);
+                        shapes.emplace_back(id, std::move(newShape));
+                        shapes.back().second->draw(*this, filled, color, framed, color2);
+                        break;
+                    }
+                    else {
+                        std::cerr << "Shape will go out of the board" << std::endl;
+                        return;
+                    }
+                }
+                else {
+                    std::cerr << "Invalid argument count" << std::endl;
+                    return;
+                }
             }
-            if(dynamic_cast<Triangle*>(shape->second.get())) {
 
-                parseParameters >> p1 >> p2;
-                remove();
-                std::unique_ptr<Shape> newShape = std::make_unique<Triangle>(x, y, filled, color, framed, color2, p1,
-                                                                              p2);
-                shapes.emplace_back(id, std::move(newShape));
-                shapes.back().second->draw(*this, filled, color, framed, color2);
-                break;
+
+
+
+            if (dynamic_cast<Triangle *>(shape->second.get())) {
+
+                if(parseParameters >> p1 >> p2) {
+                    if(p1 < BoardWidth || p2 < BoardHeight) {
+                        remove();
+                        std::unique_ptr<Shape> newShape = std::make_unique<Triangle>(x, y, filled, color, framed, color2, p1,
+                                                                                     p2);
+                        shapes.emplace_back(id, std::move(newShape));
+                        shapes.back().second->draw(*this, filled, color, framed, color2);
+                        break;
+                    }
+                    else {
+                        std::cerr << "Shape will go out of the board" << std::endl;
+                        return;
+                    }
+                }
+                else {
+                    std::cerr << "Invalid argument count" << std::endl;
+                    return;
+                }
             }
-            if(dynamic_cast<HorizontalLine*>(shape->second.get())) {
-                parseParameters >> p1;
-                remove();
 
-                std::unique_ptr<Shape> newShape = std::make_unique<HorizontalLine>(x, y, filled, color, framed, color2, p1);
-                shapes.emplace_back(id, std::move(newShape));
-                shapes.back().second->draw(*this, filled, color, framed, color2);
-                break;
+
+
+
+            if (dynamic_cast<HorizontalLine *>(shape->second.get())) {
+                if(parseParameters >> p1) {
+                    if(p1 < BoardWidth) {
+                        remove();
+                        std::unique_ptr<Shape> newShape = std::make_unique<HorizontalLine>(x, y, filled, color, framed, color2,
+                                                                                           p1);
+                        shapes.emplace_back(id, std::move(newShape));
+                        shapes.back().second->draw(*this, filled, color, framed, color2);
+                        break;
+                    }
+                    else {
+                        std::cerr << "Shape will go out of the board" << std::endl;
+                        return;
+                    }
+                }
+                else {
+                    std::cerr << "Invalid argument count" << std::endl;
+                    return;
+                }
             }
-            if(dynamic_cast<VerticalLine*>(shape->second.get())) {
-
-                parseParameters >> p1;
-
-                remove();
 
 
-                std::unique_ptr<Shape> newShape = std::make_unique<VerticalLine>(x, y, filled, color, framed, color2, p1);
-                shapes.emplace_back(id, std::move(newShape));
-                shapes.back().second->draw(*this, filled, color, framed, color2);
-                break;
+
+            if (dynamic_cast<VerticalLine *>(shape->second.get())) {
+
+                if(parseParameters >> p1) {
+                    if(p1 < BoardWidth) {
+                        remove();
+                        std::unique_ptr<Shape> newShape = std::make_unique<VerticalLine>(x, y, filled, color, framed, color2,
+                                                                                         p1);
+                        shapes.emplace_back(id, std::move(newShape));
+                        shapes.back().second->draw(*this, filled, color, framed, color2);
+                        break;
+                    }
+                    else {
+                        std::cerr << "Shape will go out of the board" << std::endl;
+                        return;
+                    }
+                }
+                else {
+                    std::cerr << "Invalid argument count" << std::endl;
+                    return;
+                }
+
             }
-            if(dynamic_cast<Circle*>(shape->second.get())) {
-
-                parseParameters >> p1;
 
 
-                remove();
 
-                std::unique_ptr<Shape> newShape = std::make_unique<Circle>(x, y, filled, color, framed, color2, p1);
-                shapes.emplace_back(id, std::move(newShape));
-                shapes.back().second->draw(*this, filled, color, framed, color2);
-                break;
+            if (dynamic_cast<Circle *>(shape->second.get())) {
+
+                if(parseParameters >> p1) {
+                    if(p1 < BoardWidth) {
+                        remove();
+                        std::unique_ptr<Shape> newShape = std::make_unique<Circle>(x, y, filled, color, framed, color2, p1);
+                        shapes.emplace_back(id, std::move(newShape));
+                        shapes.back().second->draw(*this, filled, color, framed, color2);
+                        break;
+                    }
+                    else {
+                        std::cerr << "Shape will go out of the board" << std::endl;
+                        return;
+                    }
+                }
+                else {
+                    std::cerr << "Invalid argument count" << std::endl;
+                    return;
+                }
             }
         }
     }
 }
 
 void Board::paint(std::string &color) {
+
+
+
     if (selectedShape == nullptr) {
         std::cerr << "No shape to paint" << std::endl;
         return;
@@ -557,13 +630,17 @@ void Board::paint(std::string &color) {
             int y = shape->second->getY();
             bool filled = shape->second->getIsFilled();
             bool framed = shape->second->getColorFramed();
+
+
+
+
             if (auto *rectangle = dynamic_cast<Rectangle *>(shape->second.get())) {
 
                 int p1 = rectangle->getWidth();
                 int p2 = rectangle->getHeight();
 
                 remove();
-                if (filled && framed) {
+                if (!filled && !framed) {
                     std::unique_ptr<Shape> newShape = std::make_unique<Rectangle>(x, y, filled, color, true, color, p1,
                                                                                   p2);
                     shapes.emplace_back(id, std::move(newShape));
@@ -577,13 +654,17 @@ void Board::paint(std::string &color) {
                 shapes.back().second->draw(*this, filled, color, framed, color);
                 break;
             }
+
+
+
+
             if (auto *triangle = dynamic_cast<Triangle *>(shape->second.get())) {
 
                 int p1 = triangle->getWidth();
                 int p2 = triangle->getHeight();
 
                 remove();
-                if (filled && framed) {
+                if (!filled && !framed) {
                     std::unique_ptr<Shape> newShape = std::make_unique<Triangle>(x, y, filled, color, true, color, p1,
                                                                                  p2);
                     shapes.emplace_back(id, std::move(newShape));
@@ -596,12 +677,16 @@ void Board::paint(std::string &color) {
                 shapes.back().second->draw(*this, filled, color, framed, color);
                 break;
             }
+
+
+
+
             if (auto *horizontalLine = dynamic_cast<HorizontalLine *>(shape->second.get())) {
 
                 int p1 = horizontalLine->getLength();
 
                 remove();
-                if (filled && framed) {
+                if (!filled && !framed) {
                     std::unique_ptr<Shape> newShape = std::make_unique<HorizontalLine>(x, y, filled, color, true, color,
                                                                                        p1);
                     shapes.emplace_back(id, std::move(newShape));
@@ -615,13 +700,17 @@ void Board::paint(std::string &color) {
                 shapes.back().second->draw(*this, filled, color, framed, color);
                 break;
             }
+
+
+
+
             if (auto *verticalLine = dynamic_cast<VerticalLine *>(shape->second.get())) {
 
                 int p1 = verticalLine->getLength();
 
                 remove();
 
-                if (filled && framed) {
+                if (!filled && !framed) {
                     std::unique_ptr<Shape> newShape = std::make_unique<VerticalLine>(x, y, filled, color, true, color,
                                                                                      p1);
                     shapes.emplace_back(id, std::move(newShape));
@@ -636,6 +725,10 @@ void Board::paint(std::string &color) {
                 shapes.back().second->draw(*this, filled, color, framed, color);
                 break;
             }
+
+
+
+
             if (auto *circle = dynamic_cast<Circle *>(shape->second.get())) {
 
 
@@ -644,7 +737,7 @@ void Board::paint(std::string &color) {
 
                 remove();
 
-                if (filled && framed) {
+                if (!filled && !framed) {
                     std::unique_ptr<Shape> newShape = std::make_unique<Circle>(x, y, filled, color, true, color, p1);
                     shapes.emplace_back(id, std::move(newShape));
                     shapes.back().second->draw(*this, filled, color, true, color);
@@ -662,18 +755,27 @@ void Board::paint(std::string &color) {
 }
 
 void Board::move(int x, int y) {
+
+
+
     if (selectedShape == nullptr) {
-        std::cerr << "No shape to paint" << std::endl;
+        std::cerr << "No shape to move" << std::endl;
         return;
     }
 
     for (auto shape = shapes.begin(); shape != shapes.end(); shape++) {
+
+
+
         if (shape->second.get() == selectedShape) {
             long id = shape->first;
             bool filled = shape->second->getIsFilled();
             bool framed = shape->second->getColorFramed();
             std::string color = shape->second->getColor();
             std::string color2 = shape->second->getColor2();
+
+
+
             if (auto *rectangle = dynamic_cast<Rectangle *>(shape->second.get())) {
 
                 int p1 = rectangle->getWidth();
@@ -686,6 +788,9 @@ void Board::move(int x, int y) {
                 shapes.back().second->draw(*this, filled, color, framed, color2);
                 break;
             }
+
+
+
             if (auto *triangle = dynamic_cast<Triangle *>(shape->second.get())) {
 
                 int p1 = triangle->getWidth();
@@ -699,6 +804,9 @@ void Board::move(int x, int y) {
                 shapes.back().second->draw(*this, filled, color, framed, color2);
                 break;
             }
+
+
+
             if (auto *horizontalLine = dynamic_cast<HorizontalLine *>(shape->second.get())) {
 
                 int p1 = horizontalLine->getLength();
@@ -711,12 +819,14 @@ void Board::move(int x, int y) {
                 shapes.back().second->draw(*this, filled, color, framed, color2);
                 break;
             }
+
+
+
             if (auto *verticalLine = dynamic_cast<VerticalLine *>(shape->second.get())) {
 
                 int p1 = verticalLine->getLength();
 
                 remove();
-
 
                 std::unique_ptr<Shape> newShape = std::make_unique<VerticalLine>(x, y, filled, color, framed, color2,
                                                                                  p1);
@@ -724,6 +834,9 @@ void Board::move(int x, int y) {
                 shapes.back().second->draw(*this, filled, color, framed, color2);
                 break;
             }
+
+
+
             if (auto *circle = dynamic_cast<Circle *>(shape->second.get())) {
 
 
@@ -740,5 +853,4 @@ void Board::move(int x, int y) {
             }
         }
     }
-
 }

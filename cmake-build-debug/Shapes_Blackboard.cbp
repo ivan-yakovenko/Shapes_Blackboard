@@ -76,52 +76,52 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Board/Board.cpp">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Board/Board.cpp">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Board/Board.h">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Board/Board.h">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/CLI.cpp">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/CLI/CLI.cpp">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/CLI.h">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/CLI/CLI.h">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Circle/Circle.cpp">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Circle/Circle.cpp">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Circle/Circle.h">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Circle/Circle.h">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/HorizontalLine/HorizontalLine.cpp">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/HorizontalLine/HorizontalLine.cpp">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/HorizontalLine/HorizontalLine.h">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/HorizontalLine/HorizontalLine.h">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Rectangle/Rectangle.cpp">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Rectangle/Rectangle.cpp">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Rectangle/Rectangle.h">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Rectangle/Rectangle.h">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Shape/Shape.h">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Shape/Shape.h">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Triangle/Triangle.cpp">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Triangle/Triangle.cpp">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/Triangle/Triangle.h">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/Triangle/Triangle.h">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/VerticalLine/VerticalLine.cpp">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/VerticalLine/VerticalLine.cpp">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/VerticalLine/VerticalLine.h">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/VerticalLine/VerticalLine.h">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
-		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/main.cpp">
+		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/src/main.cpp">
 			<Option target="Shapes_Blackboard"/>
 		</Unit>
 		<Unit filename="/Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/CMakeLists.txt">

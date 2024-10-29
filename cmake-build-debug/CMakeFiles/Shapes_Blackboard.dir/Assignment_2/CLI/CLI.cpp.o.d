@@ -959,24 +959,6 @@ CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/print \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/unistd.h \
   /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Shape/Shape.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/sstream \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/Rectangle.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../Shape/Shape.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../HorizontalLine/HorizontalLine.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../HorizontalLine/../Shape/Shape.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../HorizontalLine/../Board/Board.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../VerticalLine/VerticalLine.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../VerticalLine/../Shape/Shape.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../VerticalLine/../Board/Board.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Triangle/Triangle.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Triangle/../Shape/Shape.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Triangle/../HorizontalLine/HorizontalLine.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Triangle/../Board/Board.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../VerticalLine/VerticalLine.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../HorizontalLine/HorizontalLine.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Circle/Circle.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Circle/../Shape/Shape.h \
-  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Circle/../Board/Board.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/fstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/filesystem \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
@@ -996,4 +978,22 @@ CMakeFiles/Shapes_Blackboard.dir/Assignment_2/CLI/CLI.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__filesystem/u8path.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/sstream \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/Rectangle.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../Shape/Shape.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../HorizontalLine/HorizontalLine.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../HorizontalLine/../Shape/Shape.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../HorizontalLine/../Board/Board.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../VerticalLine/VerticalLine.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../VerticalLine/../Shape/Shape.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Rectangle/../VerticalLine/../Board/Board.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Triangle/Triangle.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Triangle/../Shape/Shape.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Triangle/../HorizontalLine/HorizontalLine.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Triangle/../Board/Board.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../VerticalLine/VerticalLine.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../HorizontalLine/HorizontalLine.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Circle/Circle.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Circle/../Shape/Shape.h \
+  /Users/ivanyakovenko/CLionProjects/Shapes_Blackboard/Assignment_2/CLI/../Board/../Circle/../Board/Board.h
