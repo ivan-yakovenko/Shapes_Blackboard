@@ -64,4 +64,28 @@ public:
         return this->y;
     }
 
+    void setColor(std::string& colorSetter) {
+        this->color = colorSetter;
+    };
+
+    void setColor2(std::string& colorSetter2) {
+        this->color2 = colorSetter2;
+    }
+
+    void setFilled(bool isFilledSetter) {
+        this->isFilled = isFilledSetter;
+    }
+
+    void setFramed(bool isFramedSetter) {
+        this->colorFramed = isFramedSetter;
+    }
+
+    void setX(int xSetter) {
+        this->x = xSetter;
+    }
+
+    void setY(int ySetter) {
+        this->y = ySetter;
+    }
+
 };
