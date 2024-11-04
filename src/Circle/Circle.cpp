@@ -136,3 +136,7 @@ int Circle::getRadius() const {
 void Circle::saveInfo(std::ofstream &fout) {
     fout << isFilled << " " << color << " " << colorFramed << " " <<  color2 << " " << "circle" << " " << x << " " << y << " " << radius << std::endl;
 }
+
+void Circle::setRadius(int radiusSetter) {
+    this->radius = radiusSetter;
+}

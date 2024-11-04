@@ -13,5 +13,7 @@ public:
     void saveInfo(std::ofstream &fout) override;
 
     [[nodiscard]] int getRadius() const;
+
+    void setRadius(int radiusSetter);
 };
 
