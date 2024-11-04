@@ -13,4 +13,6 @@ public:
     void saveInfo(std::ofstream &fout) override;
 
     [[nodiscard]] int getLength() const;
+
+    void setLength(int lengthSetter);
 };

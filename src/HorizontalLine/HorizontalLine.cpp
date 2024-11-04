@@ -44,3 +44,7 @@ void HorizontalLine::saveInfo(std::ofstream &fout) {
          << length
          << std::endl;
 }
+
+void HorizontalLine::setLength(int lengthSetter) {
+    this->length = lengthSetter;
+}
