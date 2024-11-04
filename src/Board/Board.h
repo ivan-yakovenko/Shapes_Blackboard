@@ -18,8 +18,8 @@ private:
     std::vector<std::vector<char>> grid;
     std::vector<std::pair<long, std::unique_ptr<Shape>>> shapes;
     Shape* selectedShape = nullptr;
-    static void modeChecker(std::string& mode);
-    static void colorChecker(std::string& color);
+    static bool modeChecker(std::string& mode);
+    static bool colorChecker(std::string& color);
 public:
     Board();
     void draw();
@@ -35,5 +35,6 @@ public:
     void remove();
     void edit(std::string& parameters);
     void paint(std::string& color);
-    void move(int x, int y);
+    void move(std::string& parameters);
+    void reassignGrid();
 };
