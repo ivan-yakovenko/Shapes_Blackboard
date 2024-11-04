@@ -44,3 +44,7 @@ void VerticalLine::saveInfo(std::ofstream &fout) {
          " " << length
          << std::endl;
 }
+
+void VerticalLine::setLength(int lengthSetter) {
+    this->length = lengthSetter;
+}
