@@ -68,9 +68,9 @@ void CLI::run() {
             board.paint(color);
         }
         if (command == "move") {
-            int x, y;
-            tokens >> x >> y;
-            board.move(x, y);
+            std::string parameters;
+            std::getline(tokens, parameters);
+            board.move(parameters);
         }
     }
 }
