@@ -19,6 +19,10 @@ public:
     void saveInfo(std::ofstream &fout) override;
     [[nodiscard]] int getWidth() const;
     [[nodiscard]] int getHeight() const;
+
+
+    void setWidth(int widthSetter);
+    void setHeight(int heightSetter);
 };
 
 

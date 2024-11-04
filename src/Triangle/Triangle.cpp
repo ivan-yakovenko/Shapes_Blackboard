@@ -89,3 +89,11 @@ int Triangle::getHeight() const {
 void Triangle::saveInfo(std::ofstream &fout) {
     fout << isFilled << " " << color << " " << colorFramed << " " << color2 << " " << "triangle" << " " << x << " " << y << " " << width << " " << height << std::endl;
 }
+
+void Triangle::setWidth(int widthSetter) {
+    this->width = widthSetter;
+}
+
+void Triangle::setHeight(int heightSetter) {
+    this->height = heightSetter;
+}
