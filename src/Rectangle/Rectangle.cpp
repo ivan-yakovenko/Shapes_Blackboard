@@ -92,3 +92,11 @@ int Rectangle::getHeight() const {
 void Rectangle::saveInfo(std::ofstream &fout) {
     fout << isFilled << " " << color << " " << colorFramed << " " << color2 << " " << "rectangle" << " " << x << " " << y << " " << width << " " << height << std::endl;
 }
+
+void Rectangle::setHeight(int heightSetter) {
+    this->height = heightSetter;
+}
+
+void Rectangle::setWidth(int widthSetter) {
+    this->width = widthSetter;
+}
